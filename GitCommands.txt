@@ -14,6 +14,8 @@ git push origin main //pushing committed files to the remote git repository
 git pull origin main //pulling latest changes from the remote git repository
 git log //getting history of commits
 git log --oneline //getting history of commits in one line format
+git log --pretty=oneline //getting history of commits in one line format with full commit id
+git log --graph //show history of commits in graphical form.
 
 git branch new_branch //create branch
 git checkout new_branch //switch branch
@@ -23,6 +25,8 @@ git checkout -b new_branch //create and switch branch in one command
 git diff //getting differences of files
 git rm filename //to remove the file from git
 git remote -v //view remote repository
+
+git merge branch_name //merging branches
 
 git checkout -- filename //undo file changes
 git reset --soft HEAD~1 //undo last commit(keep changes)
