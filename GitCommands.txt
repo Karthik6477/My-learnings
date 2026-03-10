@@ -23,3 +23,6 @@ git checkout -b new_branch //create and switch branch in one command
 git diff //getting differences of files
 git rm filename //to remove the file from git
 git remote -v //view remote repository
+
+git checkout -- filename //undo file changes
+git reset --soft HEAD~1 //undo last commit(keep changes)
