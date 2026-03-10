@@ -1,0 +1,42 @@
+git config --global user.name "Your Name"   //configuring git
+git config --global user.email "your@email.com"   //configuring git
+
+git config --list  //getting configuration info
+
+git init //initializing git
+git clone https://github.com/user/project.git //cloning git source
+git status //checking status of local git repository
+git add filename //staging file to commit
+git add . //staging all files to commit
+git commit -m "Your commit message" //committing the staged files to local git repository
+git commit -a -m "Your commit message" //adding and committing the unstaged files to local git repository in one command
+git push origin main //pushing committed files to the remote git repository
+git pull origin main //pulling latest changes from the remote git repository
+git log //getting history of commits
+git log --oneline //getting history of commits in one line format
+git log --pretty=oneline //getting history of commits in one line format with full commit id
+git log --graph //show history of commits in graphical form.
+
+git branch new_branch //create branch
+git checkout new_branch //switch branch
+git switch other_branch //switch branch
+git checkout -b new_branch //create and switch branch in one command
+
+git diff //getting differences of files
+git rm filename //to remove the file from git
+git remote -v //view remote repository
+
+git merge branch_name //merging branches
+
+git checkout -- filename //undo file changes
+git reset --soft HEAD~1 //undo last commit(keep changes)
+
+git tag v1.0 //lightweight tag
+git tag -a v1.0 -m "Release version 1.0" //anotated tag
+git show v1.0 //show tag details
+git push origin v1.0 //push single tag
+git push origin --tags //push all tags
+git tag -d v1.0 //delete local tag
+git push origin --delete v1.0 //delete remote tag
+git checkout v1.0 //checkout tag
+git checkout -b new_branch v1.0 //checkout branch from tag
